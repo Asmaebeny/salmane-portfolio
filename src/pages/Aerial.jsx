@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-const droneVideo = "https://res.cloudinary.com/xxxe66zw/video/upload/v1789845583/drone-cloudinary.mp4"
-const droneVideo1 = "https://res.cloudinary.com/xxxe66zw/video/upload/v1789849992/drone1-cloudinary.mp4"
+const droneVideo = "https://res.cloudinary.com/xxxe66zw/video/upload/w_1280,q_auto,f_auto/v1789845583/drone-cloudinary.mp4"
+const droneVideo1 = "https://res.cloudinary.com/xxxe66zw/video/upload/w_1280,q_auto,f_auto/v1789849992/drone1-cloudinary.mp4"
 import '../App.css'
 
 function Aerial() {
@@ -23,21 +23,23 @@ function Aerial() {
       <section className="video-gallery">
 
         <div className="gallery-video">
-          <video
-            src={droneVideo}
-            controls
-            playsInline
-            muted
-          />
+         <video
+  src={droneVideo}
+  controls
+  playsInline
+  muted
+  preload="metadata"
+/>
         </div>
 
         <div className="gallery-video">
-          <video
-            src={drone1Video}
-            controls
-            playsInline
-            muted
-          />
+         <video
+  src={droneVideo1}
+  controls
+  playsInline
+  muted
+  preload="metadata"
+/>
         </div>
 
       </section>

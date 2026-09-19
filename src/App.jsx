@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Aerial from './pages/Aerial'
 import Events from './pages/Events'
 import Action from './pages/Action'
-const droneVideo = "https://res.cloudinary.com/xxxe66zw/video/upload/v1789845583/drone-cloudinary.mp4"
-const eventVideo = "https://res.cloudinary.com/xxxe66zw/video/upload/v1789846550/event-cloudinary.mp4"
-const trailVideo = "https://res.cloudinary.com/xxxe66zw/video/upload/v1789840346/trail.mp4.mp4"
+const droneVideo = "https://res.cloudinary.com/xxxe66zw/video/upload/w_1280,q_auto,f_auto/v1789845583/drone-cloudinary.mp4"
+const eventVideo = "https://res.cloudinary.com/xxxe66zw/video/upload/w_1280,q_auto,f_auto/v1789846550/event-cloudinary.mp4"
+const trailVideo = "https://res.cloudinary.com/xxxe66zw/video/upload/w_1280,q_auto,f_auto/v1789840346/trail.mp4.mp4"
 import './App.css'
 
 function Home() {
@@ -208,13 +208,14 @@ function Home() {
       <section className="hero">
 
         <video
-          className="hero-video"
-          src={droneVideo}
-          autoPlay
-          muted
-          loop
-          playsInline
-        />
+  className="hero-video"
+  src={droneVideo}
+  autoPlay
+  muted
+  loop
+  playsInline
+  preload="metadata"
+/>
 
         <div className="hero-overlay"></div>
 
@@ -264,14 +265,14 @@ function Home() {
           <Link to="/aerial" className="project">
 
   <div className="project-media">
-    <video
-      className="project-video"
-      src={droneVideo}
-      muted
-      loop
-      playsInline
-      autoPlay
-    />
+   <video
+  className="project-video"
+  src={droneVideo}
+  muted
+  loop
+  playsInline
+  preload="metadata"
+/>
 
     <div className="project-overlay">
       <span>{t.work.view}</span>
@@ -293,14 +294,13 @@ function Home() {
           <Link to="/events" className="project">
             <div className="project-media">
               <video
-                className="project-video"
-                src={eventVideo}
-                muted
-                loop
-                playsInline
-                autoPlay
-              />
-
+  className="project-video"
+  src={eventVideo}
+  muted
+  loop
+  playsInline
+  preload="metadata"
+/>
               <div className="project-overlay">
                 <span>{t.work.view}</span>
                 <span>→</span>
@@ -320,13 +320,13 @@ function Home() {
           <Link to="/action" className="project">
             <div className="project-media">
               <video
-                className="project-video"
-                src={trailVideo}
-                muted
-                loop
-                playsInline
-                autoPlay
-              />
+  className="project-video"
+  src={trailVideo}
+  muted
+  loop
+  playsInline
+  preload="metadata"
+/>
 
               <div className="project-overlay">
                 <span>{t.work.view}</span>

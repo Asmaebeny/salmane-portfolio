@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-const trailVideo = "https://res.cloudinary.com/xxxe66zw/video/upload/v1789840346/trail.mp4.mp4"
+const trailVideo = "https://res.cloudinary.com/xxxe66zw/video/upload/w_1280,q_auto,f_auto/v1789840346/trail.mp4.mp4"
 import '../App.css'
 
 function Action() {

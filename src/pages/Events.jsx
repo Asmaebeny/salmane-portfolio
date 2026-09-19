@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom'
-const eventVideo1 = "https://res.cloudinary.com/xxxe66zw/video/upload/v1789849074/event1-cloudinary.mp4"
-const eventVideo2 = "https://res.cloudinary.com/xxxe66zw/video/upload/v1789848204/event2-cloudinary.mp4"
 import '../App.css'
+
+const eventVideo1 =
+  "https://res.cloudinary.com/xxxe66zw/video/upload/w_1280,q_auto,f_auto/v1789849074/event1-cloudinary.mp4"
+
+const eventVideo2 =
+  "https://res.cloudinary.com/xxxe66zw/video/upload/w_1280,q_auto,f_auto/v1789848204/event2-cloudinary.mp4"
 
 function Events() {
   return (
@@ -24,10 +28,11 @@ function Events() {
 
         <div className="gallery-video">
           <video
-            src={eventVideo}
+            src={eventVideo1}
             controls
             playsInline
             muted
+            preload="metadata"
           />
         </div>
 
@@ -37,6 +42,7 @@ function Events() {
             controls
             playsInline
             muted
+            preload="metadata"
           />
         </div>
 
