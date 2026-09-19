@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import droneVideo from '../videos/drone.mp4'
-import drone1Video from '../videos/drone1.mp4'
+const droneVideo = "https://res.cloudinary.com/xxxe66zw/video/upload/v1789845583/drone-cloudinary.mp4"
+const droneVideo1 = "https://res.cloudinary.com/xxxe66zw/video/upload/v1789849992/drone1-cloudinary.mp4"
 import '../App.css'
 
 function Aerial() {

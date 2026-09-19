@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Aerial from './pages/Aerial'
 import Events from './pages/Events'
 import Action from './pages/Action'
-import droneVideo from './videos/drone.mp4'
-import eventVideo from './videos/event.mp4'
-import trailVideo from './videos/trail.mp4'
+const droneVideo = "https://res.cloudinary.com/xxxe66zw/video/upload/v1789845583/drone-cloudinary.mp4"
+const eventVideo = "https://res.cloudinary.com/xxxe66zw/video/upload/v1789846550/event-cloudinary.mp4"
+const trailVideo = "https://res.cloudinary.com/xxxe66zw/video/upload/v1789840346/trail.mp4.mp4"
 import './App.css'
 
 function Home() {

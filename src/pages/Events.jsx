@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import eventVideo from '../videos/event1.mp4'
-import eventVideo2 from '../videos/event2.mp4'
+const eventVideo1 = "https://res.cloudinary.com/xxxe66zw/video/upload/v1789849074/event1-cloudinary.mp4"
+const eventVideo2 = "https://res.cloudinary.com/xxxe66zw/video/upload/v1789848204/event2-cloudinary.mp4"
 import '../App.css'
 
 function Events() {
